@@ -1,0 +1,17 @@
+
+main class:
+    ytdlWrapper()
+    ytdlWrapper(Options options)
+
+        void setOptionHandler(optionHandler options)
+        void? fetchVideo(String url)
+        void? fetchVideo(String url, optionHandler options)
+
+        String getUserAgent()
+        String[] getExtractors()
+
+    optionHandler()
+        setOption(opt Option, String value)
+        serOption(opt Option, int value)
+
+    enum opt
