@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ytdl-JavaWrapper:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ytdl_JavaWrapper_jar</output-path>
+    <root id="archive" name="ytdl-JavaWrapper.jar">
+      <element id="module-output" name="ytdl-JavaWrapper" />
+    </root>
+  </artifact>
+</component>
