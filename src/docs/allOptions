@@ -11,8 +11,8 @@ Options:
     (useless) -i, --ignore-errors              Continue on download errors, for example to skip unavailable videos in a playlist
     (useless) --abort-on-error                 Abort downloading of further videos (in the playlist or the command line) if an
                                      error occurs
-    (done, ytdlWrapper) --dump-user-agent                Display the current browser identification
-    (done, ytdlWrapper) --list-extractors                List all supported extractors
+    (idk) --dump-user-agent                Display the current browser identification
+    (idk) --list-extractors                List all supported extractors
     (later) --extractor-descriptions         Output descriptions of all supported extractors
     (later) --force-generic-extractor        Force extraction to use the generic extractor
     (later) --default-search PREFIX          Use this prefix for unqualified URLs. For example "gvsearch2:" downloads two videos

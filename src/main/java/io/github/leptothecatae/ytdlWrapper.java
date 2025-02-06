@@ -8,20 +8,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-import io.github.leptothecatae.util.failedYTDLExecutionException;
+import io.github.leptothecatae.util.Exceptions.failedYTDLExecutionException;
 
 public class ytdlWrapper {
 
+    private RegexHelper regexhelper = new RegexHelper();
     public ytdlWrapper() {
     }
-
     public void getAvailableFormats(String url) throws failedYTDLExecutionException, IOException {
         List<String> out;
         ArrayList<String> in = new ArrayList<String>();
         in.add("--list-formats");
         in.add(url);
         out = executeCommand(in);
-        out.forEach(System.out::println);
+        for(int i = 0; i < out.size(); i++){
+            if(out.get(i).matches("^[0-9].*"))
+                //System.out.println(out.get(i));
+                regexhelper.parseVideoFormat(out.get(i));
+        }
+        //out.forEach(System.out::println);
     }
     private List<String> executeCommand(List<String> params) throws IOException, failedYTDLExecutionException {
         // adding executable path to start of params so it can be directly parsed into processbuilder

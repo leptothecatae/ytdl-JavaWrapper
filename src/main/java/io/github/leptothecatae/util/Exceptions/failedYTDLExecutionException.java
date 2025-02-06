@@ -1,4 +1,4 @@
-package io.github.leptothecatae.util;
+package io.github.leptothecatae.util.Exceptions;
 
 import java.util.List;
 public class failedYTDLExecutionException extends Exception{
